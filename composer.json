@@ -26,7 +26,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Googlised\\Bundle\\HeadersResponses": "src/"
+            "Googlised\\HeadersResponses\\": "src/"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -34,7 +34,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Googlised\\Bundle\\HeadersResponses\\Tests\\": "tests/"
+            "Googlised\\HeadersResponses\\Tests\\": "tests/"
         }
     }
 }
