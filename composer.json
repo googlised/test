@@ -1,0 +1,40 @@
+{
+    "name": "googlised/test",
+    "type": "library",
+    "description": "Add http headers to responses",
+    "keywords": [
+        "headers",
+        "cors"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marigny Melvyn"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "symfony/config": "^4.3|^5.0",
+        "symfony/framework-bundle": "^4.3|^5.0",
+        "symfony/dependency-injection": "^4.3|^5.0",
+        "symfony/http-kernel": "^4.3|^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0",
+        "symfony/yaml": "^4.3|^5.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Googlised\\Bundle\\HeadersResponses": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Googlised\\Bundle\\HeadersResponses\\Tests\\": "tests/"
+        }
+    }
+}
